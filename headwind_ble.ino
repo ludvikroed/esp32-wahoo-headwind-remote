@@ -167,7 +167,7 @@ void loop() {
 
   unsigned long now = millis();
 
-  // Knapp opp (10 %)
+  // Button for more speed (10 %)
   if (connected && digitalRead(BUTTON_UP) == LOW && now - lastUpPress > debounceDelay) {
     fanSpeed = min(fanSpeed + 10, 100);
     Serial.println("Button UP pressed");
@@ -175,7 +175,7 @@ void loop() {
     lastUpPress = now;
   }
 
-  // Knapp ned (10 %)
+  // Button for less speed (10 %)
   if (connected && digitalRead(BUTTON_DOWN) == LOW && now - lastDownPress > debounceDelay) {
     fanSpeed = max(fanSpeed - 10, 0);
     Serial.println("Button DOWN pressed");
