@@ -1,5 +1,7 @@
 # ESP32 Wahoo Headwind Button Controller
 
+Made by me and ChatGPT❤️
+
 This project allows you to control a **Wahoo Headwind smart fan** using an **ESP32** and two physical buttons.  
 It connects directly to the fan via **Bluetooth Low Energy (BLE)** and switches the fan to **manual mode**, allowing speed control without using the Wahoo app.
 
